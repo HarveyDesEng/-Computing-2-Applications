@@ -1,5 +1,5 @@
 # -Computing-2-Applications
-Public copy of Computing 2 Applications Coursework
+Public copy of Computing 2 Applications Coursework.
 
 This project involved creating a WebApp using an API.
 
