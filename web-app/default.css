@@ -1,0 +1,129 @@
+:root
+{   
+  --grid-gap: 10px;
+  --header-height: 10%;
+  --header-colour: rgb(35, 35, 35);
+  --line-thickness: 10px;
+  --text-transparency: 0;
+  --dot-colour: rgb(163, 163, 163);
+  --line-colour: rgb(49, 49, 49);
+  --red-box: rgb(207, 87, 87);
+  --blue-box: rgb(87, 87, 207);
+}
+
+body
+{
+  background-color: rgb(78, 78, 78);
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+Header
+{
+  background-color: var(--header-colour);
+  height: var(--header-height);
+  position: absolute;
+  width: 100%;
+}
+
+h1
+{
+  text-align: center;
+}
+
+main
+{
+  background-color: rgb(0, 0, 0);
+  display: grid;
+  height: calc(100% - var(--header-height));
+  position: absolute;
+  top: var(--header-height);
+  width: 100%
+}
+
+.grid_container 
+{
+  position: absolute;
+  place-self: center;
+  grid-template-columns: repeat(var(--game-columns), 1fr 4fr) 1fr;
+  grid-template-rows: repeat(var(--game-rows), 1fr 4fr) 1fr;
+  aspect-ratio: calc(var(--game-columns) / var(--game-rows));
+  max-height: 100%;
+  max-width: 100%;
+  display: grid;
+}
+
+#game_grid h_line
+{
+  color:rgba(0, 255, 0, var(--text-transparency));
+  text-align: center;
+}
+
+#game_grid h_line:hover
+{
+  background-color: var(--line-colour);
+}
+
+#game_grid v_line
+{
+  color:rgba(255, 0, 0, var(--text-transparency));
+  text-align: center;
+}
+
+#game_grid v_line:hover
+{
+  background-color: var(--line-colour);
+}
+
+#game_grid box
+{
+  color:rgba(0, 0, 255, var(--text-transparency));
+  text-align: center;
+}
+
+#game_grid dot
+{
+  background-color: var(--red-box);
+  text-align: center;
+  clip-path: ellipse(closest-side farthest-side);
+  font-size: x-small;
+}
+
+.lit
+{
+  background-color: var(--line-colour);
+}
+
+.red
+{
+  background-color: var(--red-box);
+}
+
+.blue
+{
+  background-color: var(--blue-box);
+}
+
+#result_dialog
+{
+  background: none;
+  border: none;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+#result_dialog::backdrop
+{
+  backdrop-filter: blur(5px);
+}
+
+#result_dialog h2
+{
+  font-size: 100pt;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  margin-top: calc(2 * var(--header-height));
+}

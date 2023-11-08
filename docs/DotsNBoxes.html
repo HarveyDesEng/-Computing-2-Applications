@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>DotsNBoxes - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="DotsNBoxes.html">DotsNBoxes</a><ul class='methods'><li data-type='method'><a href="DotsNBoxes.html#.h_ply">h_ply</a></li><li data-type='method'><a href="DotsNBoxes.html#.player_has_won">player_has_won</a></li><li data-type='method'><a href="DotsNBoxes.html#.player_to_ply">player_to_ply</a></li><li data-type='method'><a href="DotsNBoxes.html#.starting_state">starting_state</a></li><li data-type='method'><a href="DotsNBoxes.html#.to_string">to_string</a></li><li data-type='method'><a href="DotsNBoxes.html#.update_box_array_after_h">update_box_array_after_h</a></li><li data-type='method'><a href="DotsNBoxes.html#.update_box_array_after_v">update_box_array_after_v</a></li><li data-type='method'><a href="DotsNBoxes.html#.v_ply">v_ply</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#empty_board">empty_board</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">DotsNBoxes</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            Namespace
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+
+    
+
+    <h4 class="name" id="DotsNBoxes">DotsNBoxes</h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>This is a module for playing Dots and Boxes.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line3">line 3</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".h_ply"><span class="type-signature type-signature-static">(static) </span>h_ply<span class="signature">(row_index, column_index)</span><span class="type-signature"> &rarr; {DotsNBoxes.game_state}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that allows the player to make a ply from a horizontal line line.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line84">line 84</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>row_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.row_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The x index of line.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>column_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.column_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The y axis of the line.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A collection of all boards and moves made.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">DotsNBoxes.game_state</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".player_has_won"><span class="type-signature type-signature-static">(static) </span>player_has_won<span class="signature">(state)</span><span class="type-signature"> &rarr; {Number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that determines whether a player has won after their ply
+on a horizontal board and then returns a number representing the results.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line289">line 289</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.Board</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A collection of all boards and moves made.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The number reperesenting the results of the game.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".player_to_ply"><span class="type-signature type-signature-static">(static) </span>player_to_ply<span class="signature">(state)</span><span class="type-signature"> &rarr; {Number}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that determines the player's turn.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line111">line 111</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.Board</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A collection of all boards and moves made.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The number reperesenting the player to play next..</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".starting_state"><span class="type-signature type-signature-static">(static) </span>starting_state<span class="signature">()</span><span class="type-signature"> &rarr; {DotsNBoxes.state}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that creates the starting state of the board which includes acts as
+an object holding teh vertical, horizontal and box boards as well as a
+counter for the moves made.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>An Object holding the 3 boards and a counter for
+the moves made.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">DotsNBoxes.state</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".to_string"><span class="type-signature type-signature-static">(static) </span>to_string<span class="signature">(board)</span><span class="type-signature"> &rarr; {function}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Returns a  function, mapping a board to provided string representations.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line275">line 275</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>board</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.board</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The board being converted into a string
+representation.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The string representation.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">function</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".update_box_array_after_h"><span class="type-signature type-signature-static">(static) </span>update_box_array_after_h<span class="signature">(row_index, column_index, state)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that determines whether a box is made by the player after their ply
+on a horizontal board and then returns a new state.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line199">line 199</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>row_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.row_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The x index of line.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>column_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.column_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The y axis of the line.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.Board</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A collection of all boards and moves made.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".update_box_array_after_v"><span class="type-signature type-signature-static">(static) </span>update_box_array_after_v<span class="signature">(row_index, column_index, state)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that determines whether a box is made by the player after their ply
+on a vertical board and then returns a new state.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line151">line 151</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>row_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.row_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The x index of line.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>column_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.column_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The y axis of the line.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.Board</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A collection of all boards and moves made.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".v_ply"><span class="type-signature type-signature-static">(static) </span>v_ply<span class="signature">(row_index, column_index)</span><span class="type-signature"> &rarr; {DotsNBoxes.game_state}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Function that allows the player to make a ply from a vertical line.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="DotsNBoxes.js.html">DotsNBoxes.js</a>, <a href="DotsNBoxes.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>row_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.row_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The x index of line.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>column_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">DotsNBoxes.column_index</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The y axis of the line.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A collection of all boards and moves made.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">DotsNBoxes.game_state</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Fri Jun 23 2023 13:29:57 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
