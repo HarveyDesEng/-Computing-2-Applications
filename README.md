@@ -1,7 +1,7 @@
 # -Computing-2-Applications
-Public copy of coursework
+Public copy of Computing 2 Applications Coursework
 
-This is a cousework made for Computing 2 Applications. This project involved creating a WebApp using an API.
+This project involved creating a WebApp using an API.
 
 Skills Developed include:
 - Effective debugging strategies
